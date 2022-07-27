@@ -1,0 +1,2 @@
+python main.py 100000383 INSERT_STORE_PROFILE
+pause

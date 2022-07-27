@@ -1,0 +1,34 @@
+from enum import Enum
+from enum import IntEnum
+
+class LOGLEVEL(IntEnum):
+	D = 0
+	I = 1
+	E = 2
+
+class DB_JOB_TYPE(Enum):
+	NONE = "NONE"
+	INSERT_STORE_PROFILE = "INSERT_STORE_PROFILE"
+	INSERT_STORE_PROFILE_FORCE = "INSERT_STORE_PROFILE_FORCE"
+	INSERT_PRODUCT = "INSERT_PRODUCT"
+	INSERT_PRODUCT_FORCE = "INSERT_PRODUCT_FORCE"
+	INSERT_CATEGORY_HOT_KEYWORD_BRAND = "INSERT_CATEGORY_HOT_KEYWORD_BRAND"
+
+CFG_APP_VERSION_CODE = 1
+
+CFG_LOGLEVEL = LOGLEVEL.D
+
+CFG_MOBILE_HTTP_UA = 'Mozilla/5.0 (Linux; Android 11; SM-A226B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36'
+CFG_PC_HTTP_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36'
+
+CFG_NAVER_SHOPPING_CATEGORY_NAME_LIST = ['여성패션', '남성패션', '가구/인테리어', '화장품/미용', '식품', '출산/유아동', '반려동물용품', '생활/주방용품'
+, '가전', '디지털', '컴퓨터', '스포츠/레저', '건강/의료용품', '자동차/공구', '취미/문구/악기', '도서', 'E쿠폰/티켓', '렌탈관', '리퍼비시관', '면세점']
+
+CFG_NAVER_SHOPPING_CATEGORY_CODE_LIST = ['100000001', '100000002', '100000004', '100000003', '100000015', '100000008', '100000010', '100000011'
+, '100000005', '100000006', '100000007', '100000014', '100000009', '100000013', '100000012', '100006534', '100000016', '100000017', '100000018', '100000020']
+
+
+CFG_PROXY_FILENAME = "proxys.txt"
+
+# 상품목록 가격비교 탭
+CFG_NAVER_SHOPPING_TAB_CATALOG = "model"
